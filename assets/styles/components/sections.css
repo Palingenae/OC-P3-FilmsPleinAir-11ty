@@ -1,0 +1,13 @@
+.section {
+    margin-bottom: var(--spacing-xlarge);
+}
+
+.hero {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: calc(90vh - var(--spacing-xlarge));
+    width: 100%;
+    margin-top: var(--spacing-large);
+    /* margin-bottom: var(--spacing-xlarge); */
+}

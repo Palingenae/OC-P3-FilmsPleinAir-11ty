@@ -17,6 +17,6 @@ body {
     font-family: var(--typography-text);
     font-size: 16px;
     font-kerning: normal;
-    color: var(--color-darkgrey-1);
-    background-color: var(--color-lightgrey-1);
+    color: var(--color-lightgrey-1);
+    background-color: var(--color-darkgrey-1);
 }

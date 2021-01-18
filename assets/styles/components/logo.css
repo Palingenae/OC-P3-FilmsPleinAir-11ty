@@ -3,9 +3,9 @@
 }
 
 .logo__nav .logo__canvas {
-    fill: var(--color-lightgrey-one);
+    fill: var(--color-lightgrey-1);
 }
 
 .logo__nav .logo__triangle--category {
-    fill: var(--color-lightgrey-one)
+    fill: var(--color-lightgrey-1)
 }
