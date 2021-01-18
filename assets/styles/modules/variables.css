@@ -3,14 +3,24 @@
     --typography-titles: "Syne", serif;
     --typography-text: "Sora", sans-serif;
 
-    --color-lightgrey-one: #F4F4F4;
-    --color-lightgrey-two: #DFDFDF;
-    --color-lightgrey-three: #CACACA;
-    --color-lightgrey-four: #B5B5B5;
-    --color-darkgrey-one: #0D0D0D;
-    --color-darkgrey-two: #272727;
-    --color-darkgrey-three: #404040;
-    --color-darkgrey-four: #5A5A5A;
+    --typography-size-0: 1rem;
+    --typography-size-1: 1.333rem;
+    --typography-size-2: 1.777rem;
+    --typography-size-3: 2.369rem;
+    --typography-size-4: 3.157rem;
+    --typography-size-5: 4.209rem;
+    --typography-size-6: 5.610rem;
+    --typography-size-7: 7.478rem;
+    --typography-size-8: 9.969rem;
+
+    --color-lightgrey-1: #F4F4F4;
+    --color-lightgrey-2: #DFDFDF;
+    --color-lightgrey-3: #CACACA;
+    --color-lightgrey-4: #B5B5B5;
+    --color-darkgrey-1: #0D0D0D;
+    --color-darkgrey-2: #272727;
+    --color-darkgrey-3: #404040;
+    --color-darkgrey-4: #5A5A5A;
 
     --color-movie-laugh: #E3CC1E;
     --color-movie-cry: #2444E0;
