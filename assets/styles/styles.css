@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300&family=Syne:wght@600;800&display=swap');
+
+@import 'modules/variables.css';
+@import 'modules/global.css';
+@import 'modules/typography.css';
+@import 'components/navigation.css';
+@import 'components/footer.css';

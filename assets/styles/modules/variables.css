@@ -1,0 +1,26 @@
+:root {
+    --typography-display: "Syne", monospace;
+    --typography-titles: "Syne", serif;
+    --typography-text: "Sora", sans-serif;
+
+    --color-lightgrey-one: #F4F4F4;
+    --color-lightgrey-two: #DFDFDF;
+    --color-lightgrey-three: #CACACA;
+    --color-lightgrey-four: #B5B5B5;
+    --color-darkgrey-one: #0D0D0D;
+    --color-darkgrey-two: #272727;
+    --color-darkgrey-three: #404040;
+    --color-darkgrey-four: #5A5A5A;
+
+    --color-movie-laugh: #E3CC1E;
+    --color-movie-cry: #2444E0;
+    --color-movie-love: #FFA9E2;
+    --color-movie-hope: #0F9F29;
+    --color-movie-blush: #EE2B4B;
+
+    --spacing-xsmall: 0.5rem;
+    --spacing-small: 1rem;
+    --spacing-medium: 2rem;
+    --spacing-large: 4rem;
+    --spacing-xlarge: 8rem;
+}

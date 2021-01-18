@@ -1,0 +1,20 @@
+h1 {
+    font-family: var(--typography-titles);
+}
+
+h2 {
+    font-family: var(--typography-titles);
+}
+
+h3 {
+    font-family: var(--typography-titles);
+}
+
+a {
+    color: var(--color-lightgrey-one);
+}
+
+p {
+    font-family: var(--typography-text);
+    font-size: 1.125rem;
+}

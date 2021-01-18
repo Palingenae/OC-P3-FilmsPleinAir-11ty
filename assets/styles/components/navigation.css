@@ -1,0 +1,22 @@
+.navigation--site {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: var(--spacing-medium) var(--spacing-large);
+}
+
+.navigation__menu {
+    display: flex;
+    flex-grow: 1;
+    max-width: 60%;
+    justify-content: space-around;
+    padding: 0 var(--spacing-large);
+}
+
+.navigation__menu__link {
+    display: inline-flex;
+    padding: var(--spacing-xsmall);
+}
