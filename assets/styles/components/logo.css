@@ -1,0 +1,11 @@
+.logo__nav {
+    height: 3rem;
+}
+
+.logo__nav .logo__canvas {
+    fill: var(--color-lightgrey-one);
+}
+
+.logo__nav .logo__triangle--category {
+    fill: var(--color-lightgrey-one)
+}

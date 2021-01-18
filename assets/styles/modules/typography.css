@@ -1,20 +1,55 @@
+/** ÉCHELLE TYPOGRAPHIQUE
+*   BASE : 1em ou 16px
+*   --- Du plus petit au plus grand
+    0 : 1rem;
+    1 : 1.333rem;
+    2 : 1.777rem;
+    3 : 2.369rem;
+    4 : 3.157rem;
+    5 : 4.209rem;
+    6 : 5.610rem;
+    7 : 7.478rem;
+    8 : 9.969rem;
+*/
+
 h1 {
     font-family: var(--typography-titles);
+    font-size: var(--typography-size-6);
+    line-height: 1.25;
+    margin-bottom: var(--spacing-medium);
 }
 
 h2 {
     font-family: var(--typography-titles);
+    font-size: var(--typography-size-5);
+    line-height: 1.33;
+    margin-bottom: var(--spacing-medium);
 }
 
 h3 {
     font-family: var(--typography-titles);
+    font-size: var(--typography-size-4);
+    font-weight: 600;
+    line-height: 1.33;
+    margin-bottom: var(--spacing-medium);
+}
+
+h4 {
+    font-family: var(--typography-titles);
+    font-size: var(--typography-size-3);
+    line-height: 1.33;
+    margin-bottom: var(--spacing-small);
 }
 
 a {
-    color: var(--color-lightgrey-one);
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 p {
     font-family: var(--typography-text);
-    font-size: 1.125rem;
+    font-size: var(--typography-size-1);
+    font-weight: 200;
+    line-height: 1.5;
 }

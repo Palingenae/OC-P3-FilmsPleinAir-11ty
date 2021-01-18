@@ -7,8 +7,8 @@
 }
 
 ::selection {
-    background-color: var(--color-lightgrey-one);
-    color: var(--color-darkgrey-one);
+    background-color: var(--color-lightgrey-1);
+    color: var(--color-darkgrey-1);
 }
 
 body {
@@ -17,7 +17,6 @@ body {
     font-family: var(--typography-text);
     font-size: 16px;
     font-kerning: normal;
-    line-height: 1.5;
-    color: var(--color-lightgrey-one);
-    background-color: var(--color-darkgrey-one);
+    color: var(--color-darkgrey-1);
+    background-color: var(--color-lightgrey-1);
 }
