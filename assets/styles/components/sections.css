@@ -1,12 +1,12 @@
 .section {
-    margin-bottom: var(--spacing-xlarge);
+    margin: var(--spacing-xlarge) 0;
 }
 
 .hero {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    height: calc(90vh - var(--spacing-xlarge));
+    height: calc(100vh - var(--spacing-xlarge));
     width: 100%;
     margin-top: var(--spacing-large);
     /* margin-bottom: var(--spacing-xlarge); */
@@ -31,7 +31,7 @@
     display: flex;
     flex-flow: column nowrap;
     flex-grow: 1;
-    width: 20%;
+    width: 18%;
     padding: var(--spacing-xsmall);
     margin-right: var(--spacing-medium);
 }
@@ -40,4 +40,31 @@
     display: flex;
     flex-flow: row nowrap;
     padding: 0 var(--spacing-medium);
+}
+
+.festival-opening {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.festival-opening__text {
+    font-size: var(--typography-size-4);
+    margin-right: var(--spacing-xlarge);
+}
+
+.festival-opening__time {
+    margin: 0 var(--spacing-xlarge);
+}
+
+.festival-opening__hour {
+    font-size: var(--typography-size-7);
+    font-weight: 800;
+    line-height: var(--typography-size-7);
+    margin-bottom: var(--spacing-small);
+}
+
+.festival-opening__date {
+    font-size: var(--typography-size-3);
 }
