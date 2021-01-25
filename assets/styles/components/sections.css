@@ -106,3 +106,23 @@
     line-height: 1.5;
     margin-bottom: var(--spacing-medium);
 }
+
+/* ----- FESTIVAL INSCRIPTION CTA ----- */
+
+.cta-inscription {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-inscription__text {
+    font-size: var(--typography-size-4);
+    margin-right: var(--spacing-xlarge);
+}
+
+.cta-inscription__link {
+    font-size: var(--typography-size-4);
+    font-weight: 600;
+    margin-bottom: var(--spacing-small);
+}
