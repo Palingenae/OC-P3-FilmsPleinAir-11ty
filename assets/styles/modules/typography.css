@@ -52,7 +52,7 @@ p {
 }
 
 .paragraph--hero {
-    font-size: var(--typography-size-1);
+    font-size: var(--typography-size-2);
     font-weight: 400;
 }
 
