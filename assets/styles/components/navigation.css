@@ -21,4 +21,5 @@
 .navigation__menu__link {
     display: inline-flex;
     padding: var(--spacing-xsmall);
+    color: var(--var-color-darkgrey-1);
 }
