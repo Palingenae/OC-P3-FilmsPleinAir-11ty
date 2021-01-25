@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Les Films de Plein Air</title>
+        <!-- Viewport ici -->
         <meta charset="UTF-8">
         <meta lang="fr">
         <link href="assets/styles/styles.css" rel="stylesheet">
@@ -10,7 +11,7 @@
     <body>
         <nav class="navigation--site" role="navigation">
             <div class="navigation__logo">
-                <svg class="logo__nav" width="100%" height="100%" viewBox="0 0 230 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                <svg class="logo__nav" viewBox="0 0 230 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
                     <g transform="matrix(1,0,0,1,-7769.44,-4139.44)">
                         <g transform="matrix(1,0,0,1,34.7789,-69.2219)">
                             <g class="Logo--light-bg" transform="matrix(0.861065,0,0,0.861065,1225.96,780.471)">
@@ -26,16 +27,16 @@
                 </svg>
             </div>
             <div class="navigation__menu">
-                <a class="navigation__menu__link" href="/festival.html">
+                <a class="link navigation__menu__link" href="/festival.html">
                     Le Festival
                 </a>
-                <a class="navigation__menu__link" href="/programme.html">
+                <a class="link navigation__menu__link" href="/programme.html">
                     Le Programme
                 </a>
-                <a class="navigation__menu__link" href="/blog.html">
+                <a class="link navigation__menu__link" href="/blog.html">
                     Le Blog
                 </a>
-                <a class="navigation__menu__link" href="/contact.html">
+                <a class="link navigation__menu__link" href="/contact.html">
                     Contact
                 </a>
             </div>
@@ -71,15 +72,93 @@
                 <p>
                     Sed ego in hoc resisto; Quamvis enim depravatae non sint, pravae tamen esse possunt. Nam his libris eum malo quam reliquo ornatu villae delectari. Avaritiamne minuis? Ut optime, secundum naturam affectum esse possit. Piso igitur hoc modo, vir optimus tuique, ut scis, amantissimus. Praeteritis, inquit, gaudeo. Et quidem saepe quaerimus verbum Latinum par Graeco et quod idem valeat; Nondum autem explanatum satis, erat, quid maxime natura vellet. Res tota, Torquate, non doctorum hominum, velle post mortem epulis celebrari memoriam sui nominis. 
                 </p>
-                <a href="#">Notre d&egrave;marche</a>
+                <a href="#">Notre démarche</a>
             </section>
             <section class="section blog-excerpt">
-                <h3>Ici extraits du blog</h3>
+                <h3>Le Blog : nos dernières nouvelles</h3>
+                <section class="blog-excerpt__article-list">
+                    <section class="blog-excerpt__article-list__column">
+                        <div class="blog-excerpt__article-list__article">
+                            <div class="blog-excerpt__article__meta">
+                                <p class="blog-excerpt__article__date">
+                                17 juillet <br />
+                                2021
+                                </p>
+                            </div>
+                            <div class="blog-excerpt__article__content">
+                                <h4 class="blog-excerpt__article__title">Encore un peu avant l'ouverture !</p>
+                                <p class="blog-excerpt__article__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Age sane, inquam. Bonum incolumis acies: misera caecitas.</p>
+                            </div>
+                        </div>
+                        <div class="blog-excerpt__article-list__article">
+                            <div class="blog-excerpt__article__meta">
+                                <p class="blog-excerpt__article__date">
+                                17 juin <br />
+                                2021
+                                </p>
+                            </div>
+                            <div class="blog-excerpt__article__content">
+                                <h4 class="blog-excerpt__article__title">Truc cool qui se passe</p>
+                                <p class="blog-excerpt__article__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Age sane, inquam. Bonum incolumis acies: misera caecitas.</p>
+                            </div>
+                        </div>
+                        <div class="blog-excerpt__article-list__article">
+                            <div class="blog-excerpt__article__meta">
+                                <p class="blog-excerpt__article__date">
+                                12 mai <br />
+                                2021
+                                </p>
+                            </div>
+                            <div class="blog-excerpt__article__content">
+                                <h4 class="blog-excerpt__article__title">Ce sponsor sera présent au festival</p>
+                                <p class="blog-excerpt__article__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Age sane, inquam. Bonum incolumis acies: misera caecitas.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="blog-excerpt__article-list__column">
+                        <div class="blog-excerpt__article-list__article">
+                            <div class="blog-excerpt__article__meta">
+                                <p class="blog-excerpt__article__date">
+                                23 mars <br />
+                                2021
+                                </p>
+                            </div>
+                            <div class="blog-excerpt__article__content">
+                                <h4 class="blog-excerpt__article__title">Un petit aperçu du programme</p>
+                                <p class="blog-excerpt__article__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Age sane, inquam. Bonum incolumis acies: misera caecitas.</p>
+                            </div>
+                        </div>
+                        <div class="blog-excerpt__article-list__article">
+                            <div class="blog-excerpt__article__meta">
+                                <p class="blog-excerpt__article__date">
+                                3 février <br />
+                                2021
+                                </p>
+                            </div>
+                            <div class="blog-excerpt__article__content">
+                                <h4 class="blog-excerpt__article__title">Suivez-nous sur ces réseaux sociaux</p>
+                                <p class="blog-excerpt__article__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Age sane, inquam. Bonum incolumis acies: misera caecitas.</p>
+                            </div>
+                        </div>
+                        <div class="blog-excerpt__article-list__article">
+                            <div class="blog-excerpt__article__meta">
+                                <p class="blog-excerpt__article__date">
+                                17 janvier <br />
+                                2021
+                                </p>
+                            </div>
+                            <div class="blog-excerpt__article__content">
+                                <h4 class="blog-excerpt__article__title">Bonjour, nous sommes Les Films de Plein Air</p>
+                                <p class="blog-excerpt__article__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Age sane, inquam. Bonum incolumis acies: misera caecitas.</p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
             </section>
             <section class="section festival-opening">
                 <h3>Ici heure d'ouverture du festival</h3>
             </section>
-            <section class="section programme-excerpt">
+            <section class="section program-excerpt">
                 <h3>Ici extrait du programme</h3>
             </section>
             <section class="section cta-inscription">
