@@ -4,5 +4,7 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    font-size: var(--typography-size-1);
+    font-weight: 500;
     padding: var(--spacing-medium) var(--spacing-large);
 }

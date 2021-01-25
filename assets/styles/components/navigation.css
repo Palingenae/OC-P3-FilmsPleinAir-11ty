@@ -6,6 +6,8 @@
     align-content: center;
     align-items: center;
     width: 100%;
+    font-size: var(--typography-size-1);
+    font-weight: 500;
     background-color: var(--color-darkgrey-1);
     padding: var(--spacing-medium) var(--spacing-large);
 }
@@ -20,6 +22,6 @@
 
 .navigation__menu__link {
     display: inline-flex;
-    padding: var(--spacing-xsmall);
     color: var(--var-color-darkgrey-1);
+    padding: var(--spacing-xsmall);
 }
