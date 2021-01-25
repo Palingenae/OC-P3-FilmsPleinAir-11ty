@@ -2,6 +2,8 @@
     margin: var(--spacing-xlarge) 0;
 }
 
+/* ----- HERO ----- */
+
 .hero {
     display: flex;
     flex-flow: column nowrap;
@@ -11,6 +13,8 @@
     margin-top: var(--spacing-large);
     /* margin-bottom: var(--spacing-xlarge); */
 }
+
+/* ----- BLOG EXCERPT ----- */
 
 .blog-excerpt__article-list {
     display: flex;
@@ -42,6 +46,8 @@
     padding: 0 var(--spacing-medium);
 }
 
+/* ----- FESTIVAL OPENING TIME AND DATE ----- */
+
 .festival-opening {
     display: flex;
     flex-flow: row nowrap;
@@ -67,4 +73,36 @@
 
 .festival-opening__date {
     font-size: var(--typography-size-3);
+}
+
+/* ----- PROGRAM EXCERPT ----- */
+
+.program-excerpt__movie-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.program-excerpt__movie-list__column {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 25%;
+    padding: 0 var(--spacing-small);
+}
+
+.program-excerpt__movie {
+    margin-bottom: var(--spacing-small);
+}
+
+.program-excerpt__movie__time {
+    font-size: var(--typography-size-1);
+}
+
+.program-excerpt__movie__title {
+    /* Soit je me répète, soit je mets le nom de cette classe dans le fichier typography.css. Je préfère avoir du code qui se répète plutôt que d'avoir du code spaghetti... Dans cette classe, j'aurais utilisé "@extend .paragraph--introduction" pour réutiliser les styles sans forcément me répéter */
+    font-family: var(--typography-text);
+    font-size: var(--typography-size-2);
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: var(--spacing-medium);
 }
