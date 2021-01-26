@@ -1,0 +1,18 @@
+.button {
+    border: 1px solid var(--color-lightgrey-1);
+    padding: var(--spacing-small) var(--spacing-medium);
+}
+
+.button--CTA--register {
+    display: inline-flex;
+    margin-left: var(--spacing-small);
+    transition: color 0.1s ease-in,
+                background-color 0.1s ease-in;
+}
+
+.button--CTA--register:hover,
+.button--CTA--register:focus {
+    text-decoration: none;
+    color: var(--color-darkgrey-1);
+    background-color: var(--color-lightgrey-1);
+}

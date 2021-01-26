@@ -117,12 +117,12 @@
 }
 
 .cta-inscription__text {
-    font-size: var(--typography-size-4);
+    font-size: var(--typography-size-3);
     margin-right: var(--spacing-xlarge);
 }
 
 .cta-inscription__link {
-    font-size: var(--typography-size-4);
+    font-size: var(--typography-size-3);
     font-weight: 600;
     margin-bottom: var(--spacing-small);
 }

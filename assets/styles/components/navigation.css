@@ -6,10 +6,11 @@
     align-content: center;
     align-items: center;
     width: 100%;
-    font-size: var(--typography-size-1);
+    font-size: var(--typography-size-0);
     font-weight: 500;
     background-color: var(--color-darkgrey-1);
     padding: var(--spacing-medium) var(--spacing-large);
+    border-bottom: 1px solid var(--color-lightgrey-1);
 }
 
 .navigation__menu {
@@ -24,4 +25,9 @@
     display: inline-flex;
     color: var(--var-color-darkgrey-1);
     padding: var(--spacing-xsmall);
+}
+
+.navigation__actions {
+    display: flex;
+    flex-gros: 1;
 }
