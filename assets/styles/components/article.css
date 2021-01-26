@@ -1,0 +1,15 @@
+.article {
+    max-width: 90rem;
+    width: 100%;
+}
+
+.article__meta {
+    margin-bottom: var(--spacing-large);
+}
+
+.article__image {
+    width: 66%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: var(--spacing-xlarge);
+}
