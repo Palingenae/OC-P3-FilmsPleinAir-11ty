@@ -61,8 +61,8 @@
 
 .blog__article-list__image {
     visibility: hidden;
-    width: 20rem;
-    height: auto;
+    width: 24rem;
+    height: 100%;
     object-fit: cover;
     transition: visibility 0.1s ease-in;
 }
@@ -70,6 +70,12 @@
 .blog__article-list__article {
     display: flex;
     flex-flow: row nowrap;
+    max-width: 90rem;
+    transition: background-color 0.1s ease-in;
+}
+
+.blog__article-list__article:hover {
+    background-color: var(--color-darkgrey-2);
 }
 
 .blog__article-list__article:hover .blog__article-list__image {
@@ -80,6 +86,11 @@
     display: flex;
     flex-flow: column;
     flex-grow: 1;
+    padding: var(--spacing-small);
+}
+
+.blog__article-list__excerpt {
+    margin-bottom: var(--spacing-medium);
 }
 
 .blog__article-list__meta {
@@ -88,6 +99,10 @@
     align-items: baseline;
     justify-content: space-between;
     width: 24rem;
+}
+
+.blog__article-list__date {
+    margin-bottom: 0;
 }
 
 .blog__article-list__link {
