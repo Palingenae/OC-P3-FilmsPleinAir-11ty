@@ -87,7 +87,7 @@
     flex-flow: row nowrap;
     align-items: baseline;
     justify-content: space-between;
-    width: 30%
+    width: 24rem;
 }
 
 .blog__article-list__link {
