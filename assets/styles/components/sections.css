@@ -2,16 +2,21 @@
     margin: var(--spacing-xlarge) 0;
 }
 
-/* ----- HERO ----- */
+.content-listing {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column nowrap;
+}
 
+/* ----- HERO ----- */
 .hero {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     height: calc(100vh - var(--spacing-xlarge));
     width: 100%;
-    margin-top: var(--spacing-large);
-    /* margin-bottom: var(--spacing-xlarge); */
+    padding: var(--spacing-large);
+    margin-top: var(--spacing-xlarge);
 }
 
 /* ----- BLOG EXCERPT ----- */
@@ -31,6 +36,10 @@
     flex-flow: row nowrap;
 }
 
+.blog__article-list__article {
+    margin-bottom: var(--spacing-large);
+}
+
 .blog-excerpt__article__meta {
     display: flex;
     flex-flow: column nowrap;
@@ -44,6 +53,37 @@
     display: flex;
     flex-flow: row nowrap;
     padding: 0 var(--spacing-medium);
+}
+
+.blog__article-list__image {
+    width: 20rem;
+    height: auto;
+    object-fit: cover;
+    margin-right: var(--spacing-medium);
+}
+
+.blog__article-list__article {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.blog__article-list__text {
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+}
+
+.blog__article-list__meta {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 30%
+}
+
+.blog__article-list__link {
+    display: inline-flex;
+    font-size: var(--typography-size-1);
 }
 
 /* ----- FESTIVAL OPENING TIME AND DATE ----- */
