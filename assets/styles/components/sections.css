@@ -55,16 +55,25 @@
     padding: 0 var(--spacing-medium);
 }
 
+.blog__article-list__media {
+    margin-right: var(--spacing-large);
+}
+
 .blog__article-list__image {
+    visibility: hidden;
     width: 20rem;
     height: auto;
     object-fit: cover;
-    margin-right: var(--spacing-medium);
+    transition: visibility 0.1s ease-in;
 }
 
 .blog__article-list__article {
     display: flex;
     flex-flow: row nowrap;
+}
+
+.blog__article-list__article:hover .blog__article-list__image {
+    visibility: visible;
 }
 
 .blog__article-list__text {
