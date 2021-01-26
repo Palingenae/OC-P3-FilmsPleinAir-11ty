@@ -3,4 +3,5 @@
     flex-flow: column nowrap;
     flex-grow: 1;
     padding: var(--spacing-large);
+    margin-top: var(--spacing-xlarge);
 }
