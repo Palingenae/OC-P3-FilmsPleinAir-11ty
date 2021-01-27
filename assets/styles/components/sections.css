@@ -171,6 +171,31 @@
     margin-bottom: var(--spacing-medium);
 }
 
+.program__day {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-bottom: var(--spacing-large);
+}
+
+.program__day__list {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.program__movie {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    max-width: 33.33333%;
+    padding: var(--spacing-medium);
+    border: solid 1px var(--color-lightgrey-4)
+}
+
+.program__movie__time {
+    font-size: var(--typography-size-2)
+}
+
 /* ----- FESTIVAL INSCRIPTION CTA ----- */
 
 .cta-inscription {
