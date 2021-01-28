@@ -196,6 +196,47 @@
     font-size: var(--typography-size-2)
 }
 
+.program__movie__informations {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: var(--spacing-xlarge);
+}
+
+.program__movie__informations__poster img {
+    height: 48rem;
+    width: auto;
+}
+
+.program__movie__informations__details {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 var(--spacing-small);
+    margin-left: var(--spacing-small);
+}
+
+.program__movie__informations__text {
+    font-size: var(--typography-size-2);
+    font-weight: 300;
+    color: var(--color-lightgrey-4);
+}
+
+.program__movie__information__emphasis {
+    font-weight: 400;
+    color: var(--color-lightgrey-1);
+}
+
+.program__movie__content {
+    margin-bottom: var(--spacing-xlarge);
+}
+
+.program__movie__trailer {
+    width: 100%;
+    max-width: 60rem;
+    height: auto;
+    min-height: 30rem;
+    margin-bottom: var(--spacing-large);
+}
+
 /* ----- FESTIVAL INSCRIPTION CTA ----- */
 
 .cta-inscription {

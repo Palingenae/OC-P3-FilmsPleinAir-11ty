@@ -1,4 +1,5 @@
-.logo__nav {
+.logo__nav,
+.logo__category {
     height: 3rem;
 }
 
@@ -8,4 +9,16 @@
 
 .logo__nav .logo__triangle--category {
     fill: var(--color-lightgrey-1)
+}
+
+.logo__category {
+    margin-bottom: var(--spacing-medium);
+}
+
+.logo__category .logo__canvas {
+    fill: var(--color-lightgrey-1);
+}
+
+.logo__category .logo__triangle--category--thriller {
+    fill: var(--color-movie-hope);
 }
