@@ -5,9 +5,13 @@
 
 .button--CTA--register {
     display: inline-flex;
-    margin-left: var(--spacing-small);
+    justify-content: center;
     transition: color 0.1s ease-in,
                 background-color 0.1s ease-in;
+}
+
+.button--CTA--register--navigation {
+    margin-left: var(--spacing-small);
 }
 
 .button--CTA--register:hover,
