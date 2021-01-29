@@ -1,0 +1,57 @@
+.form {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.form__column {
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    max-width: 50%;
+    padding: 0 var(--spacing-medium);
+}
+
+.form__label {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin: var(--spacing-xsmall);
+}
+
+
+.form__label + p {
+    margin-top: var(--spacing-small);
+}
+
+.form__label__text,
+.form__label__email {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.form__input__text,
+.form__input__email {
+    width: 100%;
+    background-color: var(--color-darkgrey-1);
+    color: var(--color-lightgrey-1);
+    padding: var(--spacing-small);
+    border: 1px solid var(--color-lightgrey-1);
+}
+
+.form__input__text:focus,
+.form__input__email:focus {
+    background-color: var(--color-lightgrey-1);
+    color: var(--color-darkgrey-1);
+    border: 1px solid var(--color-darkgrey-1);
+}
+
+.form__input__checkbox {
+    background-color: red;
+    margin-right: var(--spacing-xsmall);
+}
+
+.form__label__description {
+    display: inline-flex;
+    line-height: 1.44;
+}
