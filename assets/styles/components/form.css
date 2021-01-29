@@ -31,7 +31,8 @@
 }
 
 .form__input__text,
-.form__input__email {
+.form__input__email,
+.form__input__textarea {
     width: 100%;
     background-color: var(--color-darkgrey-1);
     color: var(--color-lightgrey-1);
@@ -40,7 +41,8 @@
 }
 
 .form__input__text:focus,
-.form__input__email:focus {
+.form__input__email:focus,
+.form__input__textarea:focus {
     background-color: var(--color-lightgrey-1);
     color: var(--color-darkgrey-1);
     border: 1px solid var(--color-darkgrey-1);
