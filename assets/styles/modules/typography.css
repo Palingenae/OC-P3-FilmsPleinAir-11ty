@@ -55,7 +55,7 @@ p {
 
 p + h3,
 p + h4 {
-    margin-top: var(--spacing-large);
+    margin-top: var(--spacing-medium);
 }
 
 .paragraph--hero {
