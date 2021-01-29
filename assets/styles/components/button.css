@@ -6,6 +6,8 @@
 .button--CTA--register {
     display: inline-flex;
     justify-content: center;
+    color: var(--color-lightgrey-1);
+    background-color: var(--color-darkgrey-1);
     transition: color 0.1s ease-in,
                 background-color 0.1s ease-in;
 }
