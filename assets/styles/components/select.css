@@ -12,7 +12,7 @@
 
 .select__navigation {
     /* Temporaire */
-    color: var(--color-lightgrey-1);
+    color: var(--color-darkgrey-1);
 }
 
 .select__navigation option {

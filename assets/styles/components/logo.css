@@ -4,11 +4,11 @@
 }
 
 .logo__nav .logo__canvas {
-    fill: var(--color-lightgrey-1);
+    fill: var(--color-darkgrey-1);
 }
 
 .logo__nav .logo__triangle--category {
-    fill: var(--color-lightgrey-1)
+    fill: var(--color-darkgrey-1)
 }
 
 .logo__category {
@@ -16,7 +16,7 @@
 }
 
 .logo__category .logo__canvas {
-    fill: var(--color-lightgrey-1);
+    fill: var(--color-darkgrey-1);
 }
 
 .logo__category .logo__triangle--category--thriller {

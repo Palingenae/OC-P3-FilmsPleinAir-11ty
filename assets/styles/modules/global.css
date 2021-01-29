@@ -17,6 +17,11 @@ body {
     font-family: var(--typography-text);
     font-size: 16px;
     font-kerning: normal;
-    color: var(--color-lightgrey-1);
-    background-color: var(--color-darkgrey-1);
+    color: var(--color-darkgrey-2);
+    background-color: var(--color-lightgrey-1);
 }
+
+/* .favicon__canvas path,
+.favicon__triangle path {
+    fill: #F4F4F4;
+} */

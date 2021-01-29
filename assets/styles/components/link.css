@@ -1,6 +1,6 @@
 a,
 .link {
-    color: inherit;
+    color: var(--color-movie-cry);
     text-decoration: none;
     font-weight: 500;
     font-size: inherit;
@@ -10,5 +10,5 @@ a:hover,
 a:focus
 .link:hover,
 .link:hover {
-    text-decoration: underline 1px var(--color-lightgrey-1);
+    text-decoration: underline 1px var(--color-movie-cry);
 }

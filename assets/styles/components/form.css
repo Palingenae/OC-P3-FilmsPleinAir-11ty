@@ -13,7 +13,7 @@
 
 .form__label {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     font-weight: 500;
     margin: var(--spacing-xsmall);
 }
@@ -34,22 +34,23 @@
 .form__input__email,
 .form__input__textarea {
     width: 100%;
-    background-color: var(--color-darkgrey-1);
-    color: var(--color-lightgrey-1);
+    background-color: var(--color-lightgrey-1);
+    color: var(--color-darkgrey-1);
     padding: var(--spacing-small);
-    border: 1px solid var(--color-lightgrey-1);
+    border: 1px solid var(--color-darkgrey-1);
+    transition: color 0.1s ease-in,
+                background-color 0.1s ease-in;
 }
 
 .form__input__text:focus,
 .form__input__email:focus,
 .form__input__textarea:focus {
-    background-color: var(--color-lightgrey-1);
-    color: var(--color-darkgrey-1);
-    border: 1px solid var(--color-darkgrey-1);
+    background-color: var(--color-darkgrey-1);
+    color: var(--color-lightgrey-1);
+    border: 1px solid var(--color-lightgrey-1);
 }
 
 .form__input__checkbox {
-    background-color: red;
     margin-right: var(--spacing-xsmall);
 }
 

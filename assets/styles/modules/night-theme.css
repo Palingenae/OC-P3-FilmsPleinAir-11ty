@@ -1,0 +1,115 @@
+@media (prefers-color-scheme: light) {
+    ::selection {
+        background-color: var(--color-lightgrey-1);
+        color: var(--color-darkgrey-1);
+    }
+
+    body {
+        color: var(--color-lightgrey-1);
+        background-color: var(--color-darkgrey-1);
+    }
+
+    .logo__nav .logo__canvas {
+        fill: var(--color-lightgrey-1);
+    }
+
+    .logo__nav .logo__triangle--category {
+        fill: var(--color-lightgrey-1)
+    }
+
+    .logo__category .logo__canvas {
+        fill: var(--color-lightgrey-1);
+    }
+    
+
+    .navigation--site {
+        background-color: var(--color-darkgrey-1);
+        border-bottom: 1px solid var(--color-lightgrey-1);
+    }
+
+    .navigation__menu__link {
+        color: var(--color-lightgrey-1);
+        display: inline-flex;
+        color: var(--var-color-darkgrey-1);
+        padding: var(--spacing-xsmall);
+    }
+
+    .select__navigation {
+        /* Temporaire */
+        color: var(--color-lightgrey-1);
+    }
+
+    .button {
+        border: 1px solid var(--color-lightgrey-1);
+    }
+
+    a,
+    .link {
+        color: var(--color-movie-laugh);
+    }
+
+    a:hover,
+    a:focus
+    .link:hover,
+    .link:hover {
+    text-decoration: underline 1px var(--color-movie-laugh);
+}
+
+    .button--CTA--register {
+        color: var(--color-lightgrey-1);
+        background-color: var(--color-darkgrey-1);
+    }
+    
+    .button--CTA--register:hover,
+    .button--CTA--register:focus {
+        color: var(--color-lightgrey-1);
+        background-color: var(--color-darkgrey-1);
+    }
+
+    /* ----- Blog ----- */
+    .blog__article-list__article:hover {
+        background-color: var(--color-darkgrey-2);
+    }
+
+
+    /* ----- Programme ----- */
+    .program__movie {
+        border: solid 1px var(--color-lightgrey-3)
+    }
+
+    .program__movie__title > a,
+    .blog__article-list__title > a {
+        color: var(--color-lightgrey-1);
+    }
+
+    .program__movie__informations__text {
+        color: var(--color-lightgrey-4);
+    }
+
+    .program__movie__information__emphasis {
+        font-weight: 400;
+        color: var(--color-lightgrey-1);
+    }
+    
+    /* ----- Formulaires ----- */
+    .form__input__text,
+    .form__input__email,
+    .form__input__textarea {
+        width: 100%;
+        background-color: var(--color-darkgrey-1);
+        color: var(--color-lightgrey-1);
+        padding: var(--spacing-small);
+        border: 1px solid var(--color-lightgrey-1);
+        transition: color 0.1s ease-in,
+                    background-color 0.1s ease-in;
+    }
+    
+    .form__input__text:focus,
+    .form__input__email:focus,
+    .form__input__textarea:focus {
+        background-color: var(--color-lightgrey-1);
+        color: var(--color-darkgrey-1);
+        border: 1px solid var(--color-darkgrey-1);
+    }
+    
+} 
