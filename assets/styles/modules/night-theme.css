@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     ::selection {
         background-color: var(--color-lightgrey-1);
         color: var(--color-darkgrey-1);
