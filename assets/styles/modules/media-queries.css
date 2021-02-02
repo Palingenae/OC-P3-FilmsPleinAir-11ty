@@ -1,4 +1,8 @@
 @media screen and (max-width: 1024px) {
+    .section {
+        margin: var(--spacing-large) 0;
+    }
+
     h1 {
         font-size: var(--typography-size-5);
     }
@@ -66,6 +70,20 @@
             margin-right: var(--spacing-medium);
         }
 
+        .blog__article-list__media {
+            margin-right: 0;
+        }
+
+        .blog__article-list__image {
+            visibility: visible;
+            width: 100%;
+            height: 100%;
+        }
+
+        .article__image {
+            width: 100%;
+        }
+
         .festival-opening {
             display: flex;
             align-items: flex-end;
@@ -93,6 +111,10 @@
             width: 100%;
             padding: 0;
             margin-bottom: var(--spacing-xsmall);
+        }
+
+        .program__movie {
+            max-width: 100%;
         }
 
         .cta-inscription__text {

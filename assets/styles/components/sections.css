@@ -194,7 +194,7 @@
     flex-grow: 1;
     max-width: 33.33333%;
     padding: var(--spacing-medium);
-    border: solid 1px var(--color-darkgrey-3)
+    border: solid 1px var(--color-darkgrey-3);
 }
 
 .program__movie__time {
