@@ -20,6 +20,10 @@
     .logo__category .logo__canvas {
         fill: var(--color-lightgrey-1);
     }
+
+    .paragraph--hero {
+        color: var(--color-lightgrey-4);
+    }
     
 
     .navigation--site {

@@ -7,8 +7,8 @@
 }
 
 ::selection {
-    background-color: var(--color-lightgrey-1);
-    color: var(--color-darkgrey-1);
+    background-color: var(--color-darkgrey-1);
+    color: var(--color-lightgrey-1);
 }
 
 body {

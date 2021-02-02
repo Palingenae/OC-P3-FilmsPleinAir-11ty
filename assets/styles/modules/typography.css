@@ -61,6 +61,7 @@ p + h4 {
 .paragraph--hero {
     font-size: var(--typography-size-2);
     font-weight: 400;
+    color: var(--color-darkgrey-4);
 }
 
 .paragraph--introduction {
