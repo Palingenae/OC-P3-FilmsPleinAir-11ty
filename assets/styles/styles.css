@@ -15,4 +15,5 @@
 @import 'components/form.css';
 @import 'components/footer.css';
 
+@import 'modules/media-queries.css';
 @import 'modules/night-theme.css';

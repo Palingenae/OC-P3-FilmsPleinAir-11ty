@@ -1,0 +1,103 @@
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: var(--typography-size-5);
+    }
+    
+    h2 {
+        font-size: var(--typography-size-4);
+    }
+    
+    h3 {
+        font-size: var(--typography-size-3);
+    }
+    
+    h4 {
+        font-family: var(--typography-titles);
+        font-size: var(--typography-size-2);
+    }
+    
+    p {
+        font-size: var(--typography-size-1);
+    }
+    
+    .paragraph--hero {
+        font-size: var(--typography-size-2);
+    }
+    
+    .paragraph--introduction {
+        font-size: var(--typography-size-2);
+    }
+
+    @media screen and (max-width: 1024px) {
+        .blog-excerpt__article-list,
+        .blog-excerpt__article-list__article,
+        .blog-excerpt__article__content,
+        .blog__article-list__article,
+        .blog__article-list__meta,
+        .festival-opening,
+        .program-excerpt__movie-list,
+        .program__day__list,
+        .program__movie__informations,
+        .cta-inscription, 
+        .footer--site {
+            flex-flow: column nowrap;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        .form {
+            flex-flow: column-reverse nowrap;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        .form__column {
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        .blog-excerpt__article__content {
+            padding: 0;
+        }
+
+        .blog-excerpt__article__meta {
+            width: 100%;
+            padding: 0;
+            margin-right: var(--spacing-medium);
+        }
+
+        .festival-opening {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        
+        .festival-opening__text {
+            font-size: var(--typography-size-3);
+            margin: 0;
+            margin-bottom: var(--spacing-medium);
+        }
+        
+        .festival-opening__time {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: flex-end;
+            font-size: var(--typography-size-6);
+            line-height: var(--typography-size-6);
+            margin: 0;
+        }
+
+        .program-excerpt__movie-list__column {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            padding: 0;
+            margin-bottom: var(--spacing-xsmall);
+        }
+
+        .cta-inscription__text {
+            font-size: var(--typography-size-3);
+            margin-right: 0;
+        }
+    }
+}
