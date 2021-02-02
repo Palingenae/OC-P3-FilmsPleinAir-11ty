@@ -32,7 +32,7 @@
         font-size: var(--typography-size-2);
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 960px) {
         .blog-excerpt__article-list,
         .blog-excerpt__article-list__article,
         .blog-excerpt__article__content,
@@ -58,6 +58,8 @@
         .form__column {
             flex-grow: 1;
             max-width: 100%;
+            padding: 0;
+            margin-bottom: var(--spacing-large);
         }
 
         .blog-excerpt__article__content {
