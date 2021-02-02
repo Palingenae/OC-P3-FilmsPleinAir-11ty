@@ -1,4 +1,8 @@
 @media screen and (max-width: 1024px) {
+    .main-content {
+        padding: var(--spacing-medium);
+    }
+
     .section {
         margin: var(--spacing-large) 0;
     }
@@ -9,6 +13,7 @@
     
     h2 {
         font-size: var(--typography-size-4);
+        margin-bottom: var(--spacing-small);
     }
     
     h3 {
@@ -27,101 +32,198 @@
     .paragraph--hero {
         font-size: var(--typography-size-2);
     }
-    
+
     .paragraph--introduction {
         font-size: var(--typography-size-2);
     }
 
-    @media screen and (max-width: 960px) {
-        .blog-excerpt__article-list,
-        .blog-excerpt__article-list__article,
-        .blog-excerpt__article__content,
-        .blog__article-list__article,
-        .blog__article-list__meta,
-        .festival-opening,
-        .program-excerpt__movie-list,
-        .program__day__list,
-        .program__movie__informations,
-        .cta-inscription, 
-        .footer--site {
-            flex-flow: column nowrap;
-            flex-grow: 1;
-            max-width: 100%;
-        }
+    
+    .blog-excerpt__article-list,
+    .blog-excerpt__article-list__article,
+    .blog-excerpt__article__content,
+    .blog__article-list__article,
+    .blog__article-list__meta,
+    .festival-opening,
+    .program-excerpt__movie-list,
+    .program__day__list,
+    .program__movie__informations,
+    .cta-inscription, 
+    .footer--site,
+    .footer__menu {
+        flex-flow: column nowrap;
+        flex-grow: 1;
+        max-width: 100%;
+    }
 
-        .form {
-            flex-flow: column-reverse nowrap;
-            flex-grow: 1;
-            max-width: 100%;
-        }
+    .footer__menu {
+        align-items: center;
+    }
 
-        .form__column {
-            flex-grow: 1;
-            max-width: 100%;
-            padding: 0;
-            margin-bottom: var(--spacing-large);
-        }
+    .footer__menu > .navigation__menu__link {
+        padding: var(--spacing-small);
+    }
 
-        .blog-excerpt__article__content {
-            padding: 0;
-        }
+    .form {
+        flex-flow: column-reverse nowrap;
+        flex-grow: 1;
+        max-width: 100%;
+    }
 
-        .blog-excerpt__article__meta {
-            width: 100%;
-            padding: 0;
-            margin-right: var(--spacing-medium);
-        }
+    .form__column {
+        flex-grow: 1;
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: var(--spacing-large);
+    }
 
-        .blog__article-list__media {
-            margin-right: 0;
-        }
+    .blog-excerpt__article__content {
+        padding: 0;
+    }
 
-        .blog__article-list__image {
-            visibility: visible;
-            width: 100%;
-            height: 100%;
-        }
+    .blog-excerpt__article__meta {
+        width: 100%;
+        padding: 0;
+        margin-right: var(--spacing-medium);
+    }
 
-        .article__image {
-            width: 100%;
-        }
+    .blog__article-list__media {
+        margin-right: 0;
+    }
 
-        .festival-opening {
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-        }
-        
-        .festival-opening__text {
-            font-size: var(--typography-size-3);
-            margin: 0;
-            margin-bottom: var(--spacing-medium);
-        }
-        
-        .festival-opening__time {
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: flex-end;
-            font-size: var(--typography-size-6);
-            line-height: var(--typography-size-6);
-            margin: 0;
-        }
+    .blog__article-list__image {
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+    }
 
-        .program-excerpt__movie-list__column {
-            display: flex;
-            flex-flow: column nowrap;
-            width: 100%;
-            padding: 0;
-            margin-bottom: var(--spacing-xsmall);
-        }
+    .article__image {
+        width: 100%;
+    }
 
-        .program__movie {
-            max-width: 100%;
-        }
+    .festival-opening {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    .festival-opening__text {
+        font-size: var(--typography-size-3);
+        margin: 0;
+        margin-bottom: var(--spacing-medium);
+    }
+    
+    .festival-opening__time {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        font-size: var(--typography-size-6);
+        line-height: var(--typography-size-6);
+        margin: 0;
+    }
 
-        .cta-inscription__text {
-            font-size: var(--typography-size-3);
-            margin-right: 0;
-        }
+    .program-excerpt__movie-list__column {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        padding: 0;
+        margin-bottom: var(--spacing-xsmall);
+    }
+
+    .program__movie {
+        max-width: 100%;
+    }
+
+    .cta-inscription {
+        align-content: center;
+        text-align: center;
+    }
+
+    .cta-inscription__text,
+    .cta-inscription__link {
+        margin-right: 0;
+        font-size: var(--typography-size-2);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-content {
+        padding: var(--spacing-small);
+    }
+    
+    .section {
+        margin: var(--spacing-xlarge) 0;
+    }
+
+    h1 {
+        font-size: var(--typography-size-4);
+    }
+    
+    h2 {
+        font-size: var(--typography-size-3);
+        margin-bottom: var(--spacing-medium);
+    }
+    
+    h3 {
+        font-size: var(--typography-size-3);
+    }
+    
+    h4 {
+        font-family: var(--typography-titles);
+        font-size: var(--typography-size-2);
+    }
+    
+    p,
+    .button:not(.button--CTA--register--navigation) {
+        font-size: var(--typography-size-1);
+    }
+    
+    .paragraph--hero {
+        font-size: var(--typography-size-1);
+    }
+
+    .paragraph--introduction {
+        font-size: var(--typography-size-1);
+    }
+
+    .hero {
+        padding: var(--spacing-small);
+        margin-top: var(--spacing-xlarge);
+    }
+
+    .festival-opening__text {
+        font-size: var(--typography-size-3);
+        text-align: right;
+    }
+    
+    .festival-opening__time {
+        font-size: var(--typography-size-5);
+        line-height: var(--typography-size-5);
+    }
+
+    .program__movie__time {
+        font-size: var(--typography-size-1)
+    }
+
+    .program__movie__informations__poster img {
+        height: auto;
+        width: 100%;
+        margin-bottom: var(--spacing-medium);
+    }
+
+    .program__movie__informations__details {
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .cta-inscription__text,
+    .cta-inscription__link {
+        font-size: var(--typography-size-2);
+    }
+
+    .cta-inscription__link {
+        display: inline-flex;
+        margin: 0 auto;
     }
 }

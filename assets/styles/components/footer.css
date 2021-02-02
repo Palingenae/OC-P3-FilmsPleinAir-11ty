@@ -8,3 +8,10 @@
     font-weight: 500;
     padding: var(--spacing-medium) var(--spacing-large);
 }
+
+.footer__menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: var(--spacing-small);
+}
