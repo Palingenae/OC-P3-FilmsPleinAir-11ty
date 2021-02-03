@@ -43,8 +43,18 @@
         color: var(--color-lightgrey-1);
     }
 
-    .button {
+    .button,
+    .button--CTA {
+        background-color: var(--color-darkgrey-2);
+        color: var(--color-lightgrey-1);
         border: 1px solid var(--color-lightgrey-1);
+    }
+
+    .button:hover,
+    .button--CTA:hover {
+        background-color: var(--color-lightgrey-2);
+        color: var(--color-darkgrey-2);
+        border: 1px solid var(--color-darkgrey-2);
     }
 
     a,
@@ -60,8 +70,8 @@
 }
 
     .button--CTA--register {
-        color: var(--color-lightgrey-1);
-        background-color: var(--color-darkgrey-1);
+        color: var(--color-darkgrey-1);
+        background-color: var(--color-lightgrey-1);
     }
     
     .button--CTA--register:hover,
@@ -116,4 +126,12 @@
         border: 1px solid var(--color-darkgrey-1);
     }
     
+    .social-sharing {
+        border-top: 1px solid var(--color-lightgrey-4);
+    }
+    
+    .social-sharing__button {
+        display: inline-flex;
+        margin-right: var(--spacing-small);
+    }
 } 

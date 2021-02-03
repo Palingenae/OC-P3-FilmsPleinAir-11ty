@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 960px) {
     .main-content {
         padding: var(--spacing-medium);
     }
@@ -80,13 +80,7 @@
         padding: 0;
     }
 
-    .blog-excerpt__article__meta {
-        width: 100%;
-        padding: 0;
-        margin-right: var(--spacing-medium);
-    }
-
-    .blog__article-list__media {
+    .blog-excerpt__article66edia {
         margin-right: 0;
     }
 
@@ -142,6 +136,10 @@
     .cta-inscription__link {
         margin-right: 0;
         font-size: var(--typography-size-2);
+    }
+
+    .social-sharing {
+        max-width: 100%;
     }
 }
 
@@ -225,5 +223,21 @@
     .cta-inscription__link {
         display: inline-flex;
         margin: 0 auto;
+    }
+
+    .social-sharing {
+        display: flex;
+        flex-flow: column nowrap;
+        flex-grow: 1;
+        max-width: 100%;
+        padding: var(--spacing-large) 0;
+        border-top: 1px solid var(--color-darkgrey-1);
+        margin-bottom: var(--spacing-large);
+    }
+
+    .social-sharing__button {
+        display: inline-flex;
+        margin-right: 0;
+        margin-bottom: var(--spacing-medium);
     }
 }

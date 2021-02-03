@@ -114,6 +114,10 @@
     font-size: var(--typography-size-1);
 }
 
+.blog__article__content {
+    margin-bottom: var(--spacing-large);
+}
+
 /* ----- FESTIVAL OPENING TIME AND DATE ----- */
 
 .festival-opening {
@@ -235,7 +239,7 @@
 }
 
 .program__movie__content {
-    margin-bottom: var(--spacing-xlarge);
+    margin-bottom: var(--spacing-large);
 }
 
 .program__movie__trailer {
