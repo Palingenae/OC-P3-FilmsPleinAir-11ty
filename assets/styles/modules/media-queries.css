@@ -37,6 +37,20 @@
         font-size: var(--typography-size-2);
     }
 
+    .navigation__menu--desktop,
+    .select__navigation--desktop,
+    .button--CTA--register--navigation--desktop {
+        display: none;
+    }
+
+    .icon--menu--mobile {
+        display: inline-flex;
+    }
+
+    .navigation__menu--mobile {
+        position: fixed;
+        display: flex;
+    }
     
     .blog-excerpt__article-list,
     .blog-excerpt__article-list__article,
