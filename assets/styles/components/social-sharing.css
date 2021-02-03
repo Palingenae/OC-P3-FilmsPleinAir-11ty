@@ -1,0 +1,15 @@
+.social-sharing {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    align-items: center;
+    max-width: 66%;
+    padding: var(--spacing-large) 0;
+    border-top: 1px solid var(--color-darkgrey-1);
+    margin-bottom: var(--spacing-large);
+}
+
+.social-sharing__button {
+    display: inline-flex;
+    margin-right: var(--spacing-small);
+}
