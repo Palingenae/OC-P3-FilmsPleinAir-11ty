@@ -3,6 +3,10 @@
         padding: var(--spacing-medium);
     }
 
+    .navigation--site {
+        padding: var(--spacing-small) var(--spacing-medium);
+    }
+
     .section {
         margin: var(--spacing-large) 0;
     }
@@ -21,11 +25,6 @@
     }
     
     h4 {
-        font-family: var(--typography-titles);
-        font-size: var(--typography-size-2);
-    }
-    
-    p {
         font-size: var(--typography-size-1);
     }
     
@@ -42,18 +41,23 @@
     .button--CTA--register--navigation--desktop {
         display: none;
     }
-
+    .button--icon--menu,
+    .button--icon--menu
     .icon--menu--mobile {
         display: inline-flex;
     }
 
     .navigation__menu--mobile {
+        display: none;
+    }
+
+    .navigation__menu--mobile--active {
         position: fixed;
         display: flex;
     }
     
     .blog-excerpt__article-list,
-    .blog-excerpt__article-list__article,
+    .blog-ex button--icon--menucerpt__article-list__article,
     .blog-excerpt__article__content,
     .blog__article-list__article,
     .blog__article-list__meta,
@@ -61,9 +65,7 @@
     .program-excerpt__movie-list,
     .program__day__list,
     .program__movie__informations,
-    .cta-inscription, 
-    .footer--site,
-    .footer__menu {
+    .cta-inscription {
         flex-flow: column nowrap;
         flex-grow: 1;
         max-width: 100%;
@@ -77,7 +79,9 @@
         padding: var(--spacing-small);
     }
 
-    .form {
+    .form, 
+    .footer--site,
+    .footer__menu {
         flex-flow: column-reverse nowrap;
         flex-grow: 1;
         max-width: 100%;
@@ -157,9 +161,14 @@
     }
 }
 
+
 @media screen and (max-width: 480px) {
     .main-content {
-        padding: var(--spacing-small);
+        padding: var(--spacing-medium);
+    }
+
+    .navigation--site {
+        padding: var(--spacing-small)var(--spacing-medium);
     }
     
     .section {

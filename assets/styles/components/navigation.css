@@ -25,7 +25,6 @@
 
 .navigation__menu--mobile {
     position: fixed;
-    z-index: -99999999;
     background-color: var(--color-lightgrey-1);
     top: 0;
     left: 0;

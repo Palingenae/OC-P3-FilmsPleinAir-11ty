@@ -1,7 +1,10 @@
-.icon--menu--mobile {
+.icon--menu--mobile  {
     display: none;
     stroke: var(--color-darkgrey-1);
-    stroke-width: 2;
+    stroke-width: 1;
     stroke-linecap: round;
     stroke-linejoin: round;
+    height: 2rem;
+    width: 2rem;
+    margin: 0;
 }
