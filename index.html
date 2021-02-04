@@ -7,6 +7,7 @@
         <meta lang="fr">
         <link href="assets/styles/styles.css" rel="stylesheet">
         <link rel="icon" type="image/svg+xml" href="assets/img/vector/favicon.svg">
+        
     </head>
     <body>
         <nav class="navigation--site" role="navigation">
@@ -50,7 +51,7 @@
                 <a href="./inscription.html" class="button button--CTA--register button--CTA--register--navigation--desktop">
                     Inscrivez-vous
                 </a>
-                <button class="button--icon button--icon--menu">
+                <button class="button--icon button--icon--menu" id="menuToggle" onclick="displayMenu()">
                     <svg class="icon--menu--mobile" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 12H21" />
                         <path d="M3 6H21" />
@@ -60,7 +61,7 @@
 
             </div>
 
-            <div class="navigation__menu--mobile">
+            <div class="navigation__menu--mobile" id="drawerMenu">
                 <a class="navigation__menu__link--mobile" href="./article.html">
                     Le Festival
                 </a>
@@ -284,5 +285,6 @@
                 </a>
             </div>
         </footer>
+        <script src="./assets/javascript/navigation.js" type="text/javascript"></script>
     </body>
 </html>

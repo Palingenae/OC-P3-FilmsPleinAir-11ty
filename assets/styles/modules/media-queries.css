@@ -48,16 +48,16 @@
     }
 
     .navigation__menu--mobile {
-        display: none;
-    }
-
-    .navigation__menu--mobile--active {
         position: fixed;
         display: flex;
     }
+
+    .navigation__menu--mobile--hidden {
+        display: none;
+    }
     
     .blog-excerpt__article-list,
-    .blog-ex button--icon--menucerpt__article-list__article,
+    .blog-excerpt__article-list__article,
     .blog-excerpt__article__content,
     .blog__article-list__article,
     .blog__article-list__meta,
