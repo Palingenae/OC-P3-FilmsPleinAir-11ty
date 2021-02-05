@@ -25,7 +25,8 @@
                 background-color 0.1s ease-in;
 }
 
-.button--icon:hover {
+.button--icon:hover,
+.button--icon:focus {
     border: 1px solid var(--color-movie-cry);
     background-color: var(--color-movie-cry);
 }

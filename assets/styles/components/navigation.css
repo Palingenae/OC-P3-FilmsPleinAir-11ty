@@ -34,7 +34,7 @@
     flex-flow: column nowrap;
     justify-content: space-around;
     padding: var(--spacing-large);
-    margin-top: 117px; /* ?? */
+    margin-top: 86px; /* ?? */
 }
 
 .navigation__menu__link,
