@@ -2,16 +2,19 @@ console.log(document);
 
 function displayMenu() {
     if (document.documentElement.clientWidth < 960) {
-    const menuToggle = document.getElementById("menuToggle");
-
-    menuToggle.addEventListener("click", function() {
+        const menuToggle = document.getElementById("menuToggle");
         const drawerMenu = document.getElementById('drawerMenu');
-        drawerMenu.classList.add("navigation__menu--mobile--hidden");
-    });
+
+        menuToggle.addEventListener("click", function() {
+            drawerMenu.classList.remove("navigation__menu--mobile--active");
+        }, false);
+
+        menuToggle.addEventListener("click", function() {
+            drawerMenu.classList.add("navigation__menu--mobile--active");
+        }, false);
+
     }
 }
-
-
 
 
 // const closeButton = document.querySelector(".button--action--close");

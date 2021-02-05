@@ -25,7 +25,7 @@
     }
     
     h4 {
-        font-size: var(--typography-size-1);
+        font-size: var(--typography-size-2);
     }
     
     .paragraph--hero {
@@ -48,12 +48,12 @@
     }
 
     .navigation__menu--mobile {
-        position: fixed;
-        display: flex;
+        display: none;
     }
 
-    .navigation__menu--mobile--hidden {
-        display: none;
+    .navigation__menu--mobile--active {
+        position: fixed;
+        display: flex;
     }
     
     .blog-excerpt__article-list,
