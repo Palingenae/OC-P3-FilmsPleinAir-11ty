@@ -51,8 +51,16 @@
 
 .blog-excerpt__article__content {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     padding: 0 var(--spacing-medium);
+}
+
+.blog-excerpt__article__title {
+    margin-bottom: var(--spacing-small);
+}
+
+.blog-excerpt__article__title > a {
+    color: var(--color-darkgrey-2);
 }
 
 .blog__article-list__media {
@@ -60,7 +68,6 @@
 }
 
 .blog__article-list__image {
-    visibility: hidden;
     width: 24rem;
     height: 100%;
     object-fit: cover;
@@ -76,10 +83,6 @@
 
 .blog__article-list__article:hover {
     background-color: var(--color-lightgrey-2);
-}
-
-.blog__article-list__article:hover .blog__article-list__image {
-    visibility: visible;
 }
 
 .blog__article-list__text {

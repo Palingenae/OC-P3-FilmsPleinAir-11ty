@@ -131,6 +131,10 @@
         background-color: var(--color-darkgrey-2);
     }
 
+    .blog-excerpt__article__title > a {
+        color: var(--color-lightgrey-1);
+    }
+
 
     /* ----- Programme ----- */
     .program__movie {

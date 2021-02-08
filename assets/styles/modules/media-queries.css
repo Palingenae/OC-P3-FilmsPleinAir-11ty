@@ -101,6 +101,10 @@
         margin: 0;
     }
 
+    .blog__article-list__media {
+        margin-right: 0;
+    }
+
     .blog__article-list__image {
         visibility: visible;
         width: 100%;
