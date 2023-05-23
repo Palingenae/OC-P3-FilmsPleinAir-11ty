@@ -1,0 +1,28 @@
+{
+  "name": "oc-p3-filmspleinair-11ty",
+  "version": "0.0.1",
+  "description": "![Logo complet des Films de Plein Air sur fonc sombre]('/../assets/img/identity/Complete-LFPA__dark-bg.png)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @11ty/eleventy --serve --incremental",
+    "build": "npx @11ty/eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Palingenae/OC-P3-FilmsPleinAir-11ty.git"
+  },
+  "author": "Olivia De Scheerder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Palingenae/OC-P3-FilmsPleinAir-11ty/issues"
+  },
+  "homepage": "https://github.com/Palingenae/OC-P3-FilmsPleinAir-11ty#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "browserlist": "^1.0.1",
+    "eleventy-nbsp-filter": "^0.1.0",
+    "lightningcss": "^1.20.0",
+    "sass": "^1.62.1"
+  }
+}
