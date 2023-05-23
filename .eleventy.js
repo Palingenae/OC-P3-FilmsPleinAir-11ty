@@ -35,8 +35,7 @@ module.exports = function (eleventyConfig) {
 
     })
 
-    eleventyConfig.addPassthroughCopy("src/assets/fonts/");
-    eleventyConfig.addPassthroughCopy("src/assets/styles/css.json")
+    eleventyConfig.addPassthroughCopy("src/assets/");
     
     return {
         dir: {
