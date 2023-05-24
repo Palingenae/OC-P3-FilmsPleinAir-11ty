@@ -1,0 +1,129 @@
+---
+title: "Inscription"
+permalink: "/inscription.html"
+---
+
+{% extends "_layouts/base.njk" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+    <main class="main-content">
+        <h2>{{ title }}</h2>
+        <form method="POST">
+            <section class="form">
+                <section class="form__column">
+                    <h4>Coordonnées et accords</h4>
+                    <label class="form__label form__label__text">
+                        <span class="form__label__description">
+                            Votre nom
+                        </span>
+                        <input type="text" class="form__input__text">
+                    </label>
+
+                    <label class="form__label form__label__email">
+                        <span class="form__label__description">
+                            Votre email
+                        </span>
+                        <input type="email" class="form__input__email">
+                    </label>
+
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Je souhaite m'inscrire à la newsletter
+                        </span>
+                    </label>
+
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Je consens à ce que mes données soient utilisées pour que le festival prenne note de ma présence et soient conservées hors-festival pour que celui-ci communique avec moi par e-mail
+                        </span>
+                    </label>
+
+                    <input class="button button--CTA--register" type="submit" value="Validez votre inscription"/>
+                </section>
+                <section class="form__column">
+                    <h4>Films qui vous intéressent</h4>
+                    <p>Jeudi 5</p>
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Drive
+                        </span>
+                    </label>
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Whiplash
+                        </span>
+                    </label>
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Orange Mécanique
+                        </span>
+                    </label>
+                    <p>Vendredi 6</p>
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Boyhood
+                        </span>
+                    </label>
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Moonlight
+                        </span>
+                    </label>
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Shining
+                        </span>
+                    </label>
+                    <p>Samedi 7</p>
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Le Labyrinthe de Pan
+                        </span>
+                    </label>
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Parasite
+                        </span>
+                    </label>
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Birdman
+                        </span>
+                    </label>
+                    <p>Dimanche 8</p>
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Lalaland
+                        </span>
+                    </label>
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Le Parrain
+                        </span>
+                    </label>
+                    <label class="form__label">
+                        <input type="checkbox" class="form__input__checkbox">
+                        <span class="form__label__description">
+                            Midsommar
+                        </span>
+                    </label>
+                </section>
+            </section>
+        </form>
+    </main>
+{% endblock %}

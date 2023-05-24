@@ -1,0 +1,41 @@
+{
+    "navigation" : [
+        {
+            "label" : "Le Festival",
+            "url" : "/a-propos"
+        },
+        {
+            "label" : "Le Programme",
+            "url" : "/programme"
+        },
+        {
+            "label" : "Le Blog",
+            "url" : "/blog"
+        },
+        {
+            "label" : "Contact",
+            "url" : "/contact"
+        }
+    ],
+    "footer" : [
+        {
+            "label" : "À propos",
+            "url" : "/a-propos"
+        },
+        {
+            "label" : "Mentions légales",
+            "url" : "#"
+        },
+        {
+            "label" : "Plan du site",
+            "url" : "#"
+        }
+    ],
+    "callToAction" : {
+        "register": {
+            "labelLong" : "Incrivez-vous dès maintenant",
+            "labelShort" : "Inscrivez-vous",
+            "url": "/inscription"
+        }
+    }
+}

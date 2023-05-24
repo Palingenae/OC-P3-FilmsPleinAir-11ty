@@ -1,0 +1,84 @@
+{
+    "programme": [
+        {
+            "day": "Jeudi 3",
+            "schedule": [
+                {
+                    "title": "Drive",
+                    "duration": "1h40'",
+                    "time": "17 : 30"
+                },
+                {
+                    "title": "Whiplash",
+                    "duration": "1h47'",
+                    "time": "20 : 30"
+                },
+                {
+                    "title": "Orange Mécanique",
+                    "duration": "2h15'",
+                    "time": "23 : 00"
+                }
+            ]
+        },
+        {
+            "day": "Vendredi 4",
+            "schedule": [
+                {
+                    "title": "Boyhood",
+                    "duration": "2h46'",
+                    "time": "17 : 30"
+                },
+                {
+                    "title": "Moonlight",
+                    "duration": "1h51'",
+                    "time": "20 : 30"
+                },
+                {
+                    "title": "Shining",
+                    "duration": "2h26'",
+                    "time": "23 : 00"
+                }
+            ]
+        },
+        {
+            "day": "Samedi 5",
+            "schedule": [
+                {
+                    "title": "Le Labyrinthe de Pan",
+                    "duration": "1h59'",
+                    "time": "17 : 30"
+                },
+                {
+                    "title": "Parasite",
+                    "duration": "2h12'",
+                    "time": "20 : 30"
+                },
+                {
+                    "title": "Birdman",
+                    "duration": "2h",
+                    "time": "23 : 00"
+                }
+            ]
+        },
+        {
+            "day": "Dimanche 6",
+            "schedule": [
+                {
+                    "title": "Lalaland",
+                    "duration": "2h08'",
+                    "time": "17 : 30"
+                },
+                {
+                    "title": "Le Parrain",
+                    "duration": "2h58'",
+                    "time": "20 : 30"
+                },
+                {
+                    "title": "Midsommar",
+                    "duration": "2h18'",
+                    "time": "23 : 00"
+                }
+            ]
+        }
+    ]
+}

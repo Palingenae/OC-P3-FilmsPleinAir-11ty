@@ -2,20 +2,10 @@
 permalink: "/"
 ---
 
-{% extends "_layouts/main-layout.njk" %}
+{% extends "_layouts/base.njk" %}
 
 {% block body %}
-<section class="hero">
-    <h1>
-        Les Films de <br/> 
-        Plein Air
-    </h1>
-    <p class="paragraph--hero">
-        D&eacute;couvrez nos 12 films d'auteurs, <br />
-        du 5 au 8 ao&ucirc;t 2021, <br />
-        au Parc Monceau, &agrave; Paris
-    </p>
-</section>
+{% include "_partials/hero.njk" %}
 <main class="main-content">
     <section class="section">
         <p class="paragraph--introduction">
@@ -115,80 +105,28 @@ permalink: "/"
         </section>
     </section>
     <section class="section festival-opening">
-        <p class="festival-opening__text">Ouverture du festival :</p>
+        <p class="festival-opening__text">{{ content.doorOpening.label }}</p>
         <div class="festival-opening__time">
-            <p class="festival-opening__hour">17:00</p>
-            <p class="festival-opening__date">Jeudi 5 août</p>
+            <p class="festival-opening__hour">{{ content.doorOpening.time }} </p>
+            <p class="festival-opening__date">{{ content.doorOpening.date}}</p>
         </div>
     </section>
     <section class="section program-excerpt">
         <h3>Le Programme : les films à l'affiche</h3>
         <section class="program-excerpt__movie-list">
+            {% for movie in movies.programme %}
             <section class="program-excerpt__movie-list__column">
-                <p class="paragraph--introduction">Jeudi 5</p>
+                <p class="paragraph--introduction">{{ movie.day }}</p>
+                {% for scheduled in movie.schedule %}
                 <div class="program-excerpt__movie">
-                    <p class="program-excerpt__movie__time">18:00</p>
-                    <p class="program-excerpt__movie__title">Drive</p>
+                    <p class="program-excerpt__movie__time">{{ scheduled.time }}</p>
+                    <p class="program-excerpt__movie__title">{{ scheduled.title }}</p>
                 </div>
-                <div class="program-excerpt__movie">
-                    <p class="program-excerpt__movie__time">20:30</p>
-                    <p class="program-excerpt__movie__title">Whiplash</p>
-                </div>
-                <div class="program-excerpt__movie">
-                    <p class="program-excerpt__movie__time">22:30</p>
-                    <p class="program-excerpt__movie__title">Orange Mécanique</p>
-                </div>
+                {% endfor %}
             </section>
-            <section class="program-excerpt__movie-list__column">
-                <p class="paragraph--introduction">Vendredi 6</p>
-                <div class="program-excerpt__movie">
-                    <p class="program-excerpt__movie__time">18:00</p>
-                    <p class="program-excerpt__movie__title">Boyhood</p>
-                </div>
-                <div class="program-excerpt__movie">
-                    <p class="program-excerpt__movie__time">20:30</p>
-                    <p class="program-excerpt__movie__title">Moonlight</p>
-                </div>
-                <div class="program-excerpt__movie">
-                    <p class="program-excerpt__movie__time">22:30</p>
-                    <p class="program-excerpt__movie__title">Shining</p>
-                </div>
-            </section>
-            <section class="program-excerpt__movie-list__column">
-                <p class="paragraph--introduction">Samedi 7</p>
-                <div class="program-excerpt__movie">
-                    <p class="program-excerpt__movie__time">18:00</p>
-                    <p class="program-excerpt__movie__title">Le Labyrinthe de Pan</p>
-                </div>
-                <div class="program-excerpt__movie">
-                    <p class="program-excerpt__movie__time">20:30</p>
-                    <p class="program-excerpt__movie__title">Parasite</p>
-                </div>
-                <div class="program-excerpt__movie">
-                    <p class="program-excerpt__movie__time">22:30</p>
-                    <p class="program-excerpt__movie__title">Birdman</p>
-                </div>
-            </section>
-            <section class="program-excerpt__movie-list__column">
-                <p class="paragraph--introduction">Dimanche 8</p>
-                <div class="program-excerpt__movie">
-                    <p class="program-excerpt__movie__time">18:00</p>
-                    <p class="program-excerpt__movie__title">Lalaland</p>
-                </div>
-                <div class="program-excerpt__movie">
-                    <p class="program-excerpt__movie__time">20:30</p>
-                    <p class="program-excerpt__movie__title">Le Parrain</p>
-                </div>
-                <div class="program-excerpt__movie">
-                    <p class="program-excerpt__movie__time">22:30</p>
-                    <p class="program-excerpt__movie__title">Midsommar</p>
-                </div>
-            </section>
+            {% endfor %}
         </section>
     </section>
-    <section class="section cta-inscription">
-        <p class="cta-inscription__text">Le festival est gratuit !</p>
-        <a class="cta-inscription__link" href="/inscription.html">Inscrivez-vous dès maintenant</a>
-    </section>
+    {% include "_partials/booking_cta.njk" %}
 </main>
 {% endblock %}
