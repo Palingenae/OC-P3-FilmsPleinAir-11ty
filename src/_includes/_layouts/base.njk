@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Les Films de Plein Air - {% block title %}{% endblock %}</title>
+        <title>Les Films de Plein Air {% block title %} {% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta lang="fr">
@@ -12,6 +12,7 @@
     <body>
         {% include "_partials/header.njk" %}
         {% block body %}{% endblock %}
+        <script src="./assets/javascript/jquery.js" type="text/javascript"></script>
         <script src="./assets/javascript/navigation.js" type="text/javascript"></script>
     </body>
 
