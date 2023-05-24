@@ -22,7 +22,6 @@
     "@11ty/eleventy": "^2.0.1",
     "browserlist": "^1.0.1",
     "eleventy-nbsp-filter": "^0.1.0",
-    "lightningcss": "^1.20.0",
-    "sass": "^1.62.1"
+    "lightningcss": "^1.20.0"
   }
 }
