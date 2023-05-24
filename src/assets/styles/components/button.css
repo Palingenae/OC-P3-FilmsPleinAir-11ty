@@ -1,8 +1,11 @@
 .button,
 .button--CTA {
+    display: inline-flex;
     font-family: var(--typography-text);
+    font-size: var(--typography-size-1)
     background-color: var(--color-lightgrey-2);
     color: var(--color-darkgrey-1);
+    justify-content: center;
     border: 1px solid var(--color-darkgrey-1);
     padding: var(--spacing-small) var(--spacing-medium);
     transition: color 0.1s ease-in,
@@ -40,8 +43,6 @@
 }
 
 .button--CTA--register {
-    display: inline-flex;
-    justify-content: center;
     color: var(--color-lightgrey-1);
     background-color: var(--color-darkgrey-1);
     transition: color 0.1s ease-in,
@@ -57,4 +58,8 @@
     text-decoration: none;
     color: var(--color-darkgrey-1);
     background-color: var(--color-lightgrey-1);
+}
+
+.-spaced {
+    margin-bottom: var(--spacing-small);
 }

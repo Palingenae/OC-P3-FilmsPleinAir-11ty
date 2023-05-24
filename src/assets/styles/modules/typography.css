@@ -32,7 +32,7 @@ h3 {
     font-weight: 600;
     line-height: 1.33;
     max-width: 30ch;
-    margin-bottom: var(--spacing-large);
+    margin-bottom: var(--spacing-medium);
 }
 
 h4 {
