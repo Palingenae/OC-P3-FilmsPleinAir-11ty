@@ -1,11 +1,11 @@
 ---
-title: "Contact"
-permalink: "/contactez-nous"
+title: "Contactez-nous"
+permalink: "/{{ title | slugify }}"
 ---
 
 {% extends "_layouts/base.njk" %}
 
-{% block title %}{{ title }}{% endblock %}
+{% block title %}- {{ title }}{% endblock %}
 
 {% block body %}
     <main class="main-content">

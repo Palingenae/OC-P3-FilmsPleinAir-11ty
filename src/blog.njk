@@ -1,16 +1,17 @@
 ---
-permalink: "/blog.html"
+title: "Blog"
+permalink: "/{{ title | slugify }}"
 ---
 
 {% extends "_layouts/base.njk" %}
 
 {% block title %}
-Blog
+- Le {{ title }}
 {% endblock %}
 
 {% block body %}
 <main class="main-content">
-    <h2>Le Blog</h2>
+    <h2>Le {{ title }}</h2>
     <section class="section content-listing">
         <div class="blog__article-list__article">
             <div class="blog__article-list__media">
