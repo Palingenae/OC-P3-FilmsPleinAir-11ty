@@ -1,0 +1,44 @@
+---
+title: "À propos"
+permalink: "/{{ title | slugify }}"
+---
+{% extends "_layouts/base.njk" %}
+
+{% block title %}- {{ title }}{% endblock %}
+
+{% block body %}
+    <main class="main-content">
+        <article class="article">
+            <header class="article__header">
+                <h3>Bonjour, nous sommes Les Films de Plein Air</h3>
+                <div class="article__meta">
+                    <p>
+                        Publié le
+                        <span>
+                            17 janvier 2021
+                        </span>
+                    </p>
+                </div>
+            </header>
+            <section class="blog__article__content">
+                <img class="article__image" src="./assets/img/illustration/outdoor-cinema.jpg" alt="Cinéma en plein air en pleine soirée"/>
+
+                <h4>Nemo nostrum istius generis asotos iucunde putat vivere.</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Quis hoc dicit? Erit enim mecum, si tecum erit. <a href="http://loripsum.net/" target="_blank">An eiusdem modi?</a> O magnam vim ingenii causamque iustam, cur nova existeret disciplina! Perge porro. Cur iustitia laudatur? Atqui reperies, inquit, in hoc quidem pertinacem; <a href="http://loripsum.net/" target="_blank">Quae quidem vel cum periculo est quaerenda vobis;</a> Poterat autem inpune; </p>
+
+                <p>Ita prorsus, inquam; Claudii libidini, qui tum erat summo ne imperio, dederetur. Cur deinde Metrodori liberos commendas? Quod non faceret, si in voluptate summum bonum poneret. Cum id quoque, ut cupiebat, audivisset, evelli iussit eam, qua erat transfixus, hastam. Primum quid tu dicis breve? </p>
+
+                <h4>Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest.</h4>
+
+                <p>Hoc Hieronymus summum bonum esse dixit. Itaque his sapiens semper vacabit. Quis est autem dignus nomine hominis, qui unum diem totum velit esse in genere isto voluptatis? Quo modo autem philosophus loquitur? Ut enim consuetudo loquitur, id solum dicitur honestum, quod est populari fama gloriosum. Tu autem negas fortem esse quemquam posse, qui dolorem malum putet. De illis, cum volemus.
+                </p>
+            </section>
+        </article>
+        <section class="social-sharing">
+            <button class="button button--CTA social-sharing__button" href="#">Facebook</button>
+            <button class="button button--CTA social-sharing__button" href="#">Twitter</button>
+            <button class="button button--CTA social-sharing__button" href="#">Copier le lien</button>
+        </section>
+    </main>
+{% endblock %}
