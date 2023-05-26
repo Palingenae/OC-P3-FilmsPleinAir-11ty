@@ -1,13 +1,23 @@
-const path = require("path");
-const { EleventyI18nPlugin } = require("@11ty/eleventy");
+const HtmlMinifier = require('html-minifier');
+const ErrorOverlay = require('eleventy-plugin-error-overlay');
 
 module.exports = function (eleventyConfig) {
 
-    eleventyConfig.addWatchTarget("./src/assets");
+    // eleventyConfig.setTemplateFormats(['md']);
+    eleventyConfig.addPlugin(ErrorOverlay);
+    eleventyConfig.addTransform('htmlminifier', (content, outputPath) => {
+        if (outputPath.endsWith('.html')) {
+            let minified = HtmlMinifier.minify(content, {
+                useShortDoctype: true,
+                removeComments: true,
+                collapseWhitespace: true
+            });
+            return minified;
+        }
+        return content;
+    })
 
-    eleventyConfig.addPlugin(EleventyI18nPlugin, {
-        defaultLanguage: "fr",
-    });
+    eleventyConfig.addWatchTarget("./src/assets");
 
     eleventyConfig.addPassthroughCopy("src/assets/");
     
@@ -17,6 +27,7 @@ module.exports = function (eleventyConfig) {
             includes: "_includes",
             data: "_data",
             output: "public"
-        }
+        },
+        jsDataFileSuffix: '.data',
     }
 }

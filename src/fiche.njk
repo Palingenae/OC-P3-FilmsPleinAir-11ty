@@ -1,12 +1,12 @@
 ---
 title: "Fiche de film"
 subtitle: "Parasite"
-permalink: "/{{ subtitle | slugify }}"
+permalink: "/programme/{{ data.movie.Slug }}.html"
 ---
 
 {% extends "_layouts/base.njk" %}
 
-{% block title %}{{ subtitle }} - {{ title }}{% endblock %}
+{% block title %}{{ subtitle }} - {{ movie.Title }}{% endblock %}
 
 {% block body %}
     <main class="main-content">
@@ -14,7 +14,7 @@ permalink: "/{{ subtitle | slugify }}"
             <h2>{{ title }}</h2>
             <div class="program__movie__informations">
                 <div class="program__movie__informations__poster">
-                    <img src="/assets/img/illustration/critique-et-explications-parasite-film-2019.jpg" alt="Affiche du film Parasite"/>
+                    <img src="/assets/img/illustration/critique-et-explications-parasite-film-2019.jpg" alt="Affiche du film {{ movie.Title }}"/>
                 </div>
                 <div class="program__movie__informations__details">
                     <div class="program__movia__informations__category">
