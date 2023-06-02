@@ -82,5 +82,6 @@ function mapMovies(movie) {
 }
 
 module.exports = {
-    getAllMovies
+    getSessionDays: getAllMovies(),
+    getMovies: getAllMovies().movieSessions
 };
