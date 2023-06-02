@@ -1,4 +1,6 @@
 ---
+eleventyImports:
+    collections: ["scheduledMovies"]
 permalink: "/"
 ---
 
@@ -114,7 +116,9 @@ permalink: "/"
     <section class="section program-excerpt">
         <h3>Le Programme : les films à l'affiche</h3>
         <section class="program-excerpt__movie-list">
-            {% for movie in movies.programme %}
+            {{ log }}
+
+            {% for movie in collections.scheduledMovies %}
             <section class="program-excerpt__movie-list__column">
                 <p class="paragraph--introduction">{{ movie.day }}</p>
                 {% for scheduled in movie.schedule %}
