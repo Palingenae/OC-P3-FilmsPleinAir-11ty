@@ -1,6 +1,6 @@
 ---
 eleventyImports:
-    collections: ["scheduledMovies"]
+    collections: ["allMovieSessions"]
 permalink: "/"
 ---
 
@@ -37,7 +37,7 @@ permalink: "/"
                         </p>
                     </div>
                     <div class="blog-excerpt__article__content">
-                        <h4 class="blog-excerpt__article__title">Encore un peu avant l'ouverture !</p>
+                        <h4 class="blog-excerpt__article__title">Encore un peu avant l'ouverture !</h4>
                         <p class="blog-excerpt__article__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Age sane, inquam. Bonum incolumis acies: misera caecitas.</p>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ permalink: "/"
                         </p>
                     </div>
                     <div class="blog-excerpt__article__content">
-                        <h4 class="blog-excerpt__article__title">Truc cool qui se passe</p>
+                        <h4 class="blog-excerpt__article__title">Truc cool qui se passe</h4>
                         <p class="blog-excerpt__article__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Age sane, inquam. Bonum incolumis acies: misera caecitas.</p>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ permalink: "/"
                         </p>
                     </div>
                     <div class="blog-excerpt__article__content">
-                        <h4 class="blog-excerpt__article__title">Ce sponsor sera présent au festival</p>
+                        <h4 class="blog-excerpt__article__title">Ce sponsor sera présent au festival</h4>
                         <p class="blog-excerpt__article__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Age sane, inquam. Bonum incolumis acies: misera caecitas.</p>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ permalink: "/"
                         </p>
                     </div>
                     <div class="blog-excerpt__article__content">
-                        <h4 class="blog-excerpt__article__title">Un petit aperçu du programme</p>
+                        <h4 class="blog-excerpt__article__title">Un petit aperçu du programme</h4>
                         <p class="blog-excerpt__article__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Age sane, inquam. Bonum incolumis acies: misera caecitas.</p>
                     </div>
                 </div>
@@ -87,7 +87,7 @@ permalink: "/"
                         </p>
                     </div>
                     <div class="blog-excerpt__article__content">
-                        <h4 class="blog-excerpt__article__title">Suivez-nous sur ces réseaux sociaux</p>
+                        <h4 class="blog-excerpt__article__title">Suivez-nous sur ces réseaux sociaux</h4>
                         <p class="blog-excerpt__article__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Age sane, inquam. Bonum incolumis acies: misera caecitas.</p>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ permalink: "/"
                         </p>
                     </div>
                     <div class="blog-excerpt__article__content">
-                        <h4 class="blog-excerpt__article__title">Bonjour, nous sommes Les Films de Plein Air</p>
+                        <h4 class="blog-excerpt__article__title">Bonjour, nous sommes Les Films de Plein Air</h4>
                         <p class="blog-excerpt__article__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Age sane, inquam. Bonum incolumis acies: misera caecitas.</p>
                     </div>
                 </div>
@@ -116,15 +116,14 @@ permalink: "/"
     <section class="section program-excerpt">
         <h3>Le Programme : les films à l'affiche</h3>
         <section class="program-excerpt__movie-list">
-            {{ log }}
-
-            {% for movie in collections.scheduledMovies %}
+            {% for movieSessions in collections.allMovieSessions %}
             <section class="program-excerpt__movie-list__column">
-                <p class="paragraph--introduction">{{ movie.day }}</p>
-                {% for scheduled in movie.schedule %}
+                <p class="paragraph--introduction">{{ movieSessions.day }}</p>
+                {% for session in movieSessions %}
+                    {{ session | dump }}
                 <div class="program-excerpt__movie">
-                    <p class="program-excerpt__movie__time">{{ scheduled.time }}</p>
-                    <p class="program-excerpt__movie__title">{{ scheduled.title }}</p>
+                    <p class="program-excerpt__movie__time">{{ session.time }}</p>
+                    <p class="program-excerpt__movie__title">{{ session.title }}</p>
                 </div>
                 {% endfor %}
             </section>

@@ -11,7 +11,6 @@
 
 const env = require('dotenv').config();
 const axios = require('axios');
-const { UniqueDirectivesPerLocationRule } = require('graphql');
 
 /**
  * @returns Promise<any[]>
@@ -38,22 +37,27 @@ async function getAllMovies() {
         const optionFormatDate = {
             day: 'numeric',
             weekday: 'long',
-            month: 'long'
+            // month: 'long'
         };
 
         for (const movie of movies) {
-            const banana = mapMovies(movie);
-            const key = banana.session.toLocaleDateString(
+            const schedule = mapMovies(movie);
+            const key = schedule.session.toLocaleDateString(
                 undefined,
                 optionFormatDate
             )
             if (!moviesSessions.has(key)) {
                 moviesSessions.set(key, []);
             }
-            moviesSessions.get(key).push(banana);
+            moviesSessions.get(key).push(schedule);
         }
 
-        console.log(Array.from(moviesSessions.entries()));
+        // Console.looping so I know what is inside
+        /*for (const moviesSession of moviesSessions.entries()) {console.log(moviesSessions.entries())
+            for (const session of moviesSession.entries()) {
+                console.log(Array.from(session))
+            }
+        }*/
 
         return Array.from(moviesSessions.entries());
     } catch (error) {
@@ -82,6 +86,5 @@ function mapMovies(movie) {
 }
 
 module.exports = {
-    getSessionDays: getAllMovies(),
-    getMovies: getAllMovies().movieSessions
-};
+    getAllMovies: getAllMovies()
+}
