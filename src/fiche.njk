@@ -1,12 +1,12 @@
 ---
 title: "Fiche de film"
 subtitle: "Parasite"
-permalink: "/programme/{{ data.movie.Slug }}.html"
+permalink: "/programme/{{ session.slug }}.html"
 ---
 
 {% extends "_layouts/base.njk" %}
 
-{% block title %}{{ subtitle }} - {{ movie.Title }}{% endblock %}
+{% block title %}{{ subtitle }} - {{ session.title }}{% endblock %}
 
 {% block body %}
     <main class="main-content">

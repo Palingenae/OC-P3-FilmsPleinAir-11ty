@@ -1,6 +1,4 @@
 ---
-eleventyImports:
-    collections: ["allMovieSessions"]
 permalink: "/"
 ---
 
@@ -116,14 +114,15 @@ permalink: "/"
     <section class="section program-excerpt">
         <h3>Le Programme : les films à l'affiche</h3>
         <section class="program-excerpt__movie-list">
-            {% for movieSessions in collections.allMovieSessions %}
+            {% for moviesSessions in getAllMovies %}
             <section class="program-excerpt__movie-list__column">
-                <p class="paragraph--introduction">{{ movieSessions.day }}</p>
-                {% for session in movieSessions %}
-                    {{ session | dump }}
+                <p class="paragraph--introduction">{{ moviesSessions[0] }}</p>
+                {% for session in moviesSessions[1] %}
                 <div class="program-excerpt__movie">
                     <p class="program-excerpt__movie__time">{{ session.time }}</p>
-                    <p class="program-excerpt__movie__title">{{ session.title }}</p>
+                    <p class="program-excerpt__movie__title">
+                        <a href="/programme/{{ session.slug }}">{{ session.title }}</a>
+                    </p>
                 </div>
                 {% endfor %}
             </section>

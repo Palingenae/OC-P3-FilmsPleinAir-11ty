@@ -184,6 +184,10 @@
     margin-bottom: var(--spacing-medium);
 }
 
+.program-excerpt__movie__title a {
+    color: var(--color-darkgrey-3);
+}
+
 .program__day {
     display: flex;
     flex-flow: column nowrap;

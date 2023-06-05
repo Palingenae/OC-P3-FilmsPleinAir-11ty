@@ -42,7 +42,7 @@ async function getAllMovies() {
 
         for (const movie of movies) {
             const schedule = mapMovies(movie);
-            const key = schedule.session.toLocaleDateString(
+            const key = schedule.time.toLocaleDateString(
                 undefined,
                 optionFormatDate
             )
@@ -52,15 +52,7 @@ async function getAllMovies() {
             moviesSessions.get(key).push(schedule);
         }
 
-        // Console.looping so I know what is inside
-        /*for (const moviesSession of moviesSessions.entries()) {console.log(moviesSessions.entries())
-            for (const session of moviesSession.entries()) {
-                console.log(Array.from(session))
-            }
-        }*/
-        const scheduledMovieSessions = Array.from(moviesSessions.entries())
-
-        return scheduledMovieSessions;
+        return Array.from(moviesSessions.entries());
     } catch (error) {
         console.log(error)
     }
@@ -76,7 +68,7 @@ function mapMovies(movie) {
         id: movie.id,
         slug: movie.attributes.slug,
         title: movie.attributes.title,
-        session: new Date(`${movie.attributes.date} ${movie.attributes.time}`),
+        time: new Date(`${movie.attributes.date} ${movie.attributes.time}`),
         duration: movie.attributes.length,
         emotion: movie.attributes.emotion,
         category: movie.attributes.category,
@@ -86,4 +78,4 @@ function mapMovies(movie) {
     };
 }
 
-module.exports = getAllMovies().scheduledMovieSessions;
+module.exports = getAllMovies();
