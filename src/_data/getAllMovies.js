@@ -58,8 +58,9 @@ async function getAllMovies() {
                 console.log(Array.from(session))
             }
         }*/
+        const scheduledMovieSessions = Array.from(moviesSessions.entries())
 
-        return Array.from(moviesSessions.entries());
+        return scheduledMovieSessions;
     } catch (error) {
         console.log(error)
     }
@@ -85,6 +86,4 @@ function mapMovies(movie) {
     };
 }
 
-module.exports = {
-    getAllMovies: getAllMovies()
-}
+module.exports = getAllMovies().scheduledMovieSessions;

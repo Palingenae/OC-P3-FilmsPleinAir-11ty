@@ -2,8 +2,6 @@ const HtmlMinifier = require('html-minifier');
 const ErrorOverlay = require('eleventy-plugin-error-overlay');
 const util = require('util');
 
-// const { getAllMovies } = require('src/_data/getAllMovies')
-
 module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPlugin(ErrorOverlay);
@@ -26,14 +24,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter('dump', obj => {
         return util.inspect(obj);
       });
-
-    eleventyConfig.addCollection("allMovieSessions", async function(allMovieSessions) {
-        allMovieSessions = await getAllMovies()
-
-        console.log(allMovieSessions);
-
-        return allMovieSessions;
-    })
     
     return {
         dir: {
